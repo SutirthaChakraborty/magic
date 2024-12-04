@@ -11,11 +11,24 @@
 
     <img src="webpage_image/output.jpg" alt="Description of the image" width="400" height="300">
 
-    <img src="webpage_image/image.png" alt="Description of the image" width="400" height="300">
-    <img src="webpage_image/image (1).png" alt="Martin pic" width="400" height="300">
-    <!-- <img src="webpage_image/image.png" alt="Description of the image" width="400" height="300"> -->
-
+    <img src="webpage_image/liviu_image.png" alt="Liviu" width="400" height="300">
+    <img src="webpage_image/martin_image.png" alt="Martin pic" width="400" height="300">
+    <img src="webpage_image/suti_image.png" alt="Suti pic" width="400" height="300">
 
     <p>This is another paragraph after the image.</p>
+
+    <footer>
+        <p id="last-updated"></p>
+    </footer>
+
+    <script>
+        // Get the current date and time
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        const formattedDate = now.toLocaleDateString('en-US', options);
+
+        // Update the footer with the last updated time
+        document.getElementById('last-updated').textContent = `Last updated: ${formattedDate}`;
+    </script>
 </body>
 </html>
